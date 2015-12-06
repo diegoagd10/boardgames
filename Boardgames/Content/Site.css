@@ -1,0 +1,53 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.options {
+    text-align: right;
+}
+    .options a {
+        margin-left: 2rem;
+        text-transform: uppercase;
+    }
+
+.movie_item {
+    height: 200px;
+}
+    .movie_item_options {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 90px;
+        margin: 0 15px;
+        padding: 20px;
+        text-align: right;
+        text-transform: uppercase;
+        border-top: 1px solid rgba(160, 160, 160, 0.2);        
+    }

@@ -1,0 +1,18 @@
+﻿<h2>Board game {{game.Title}}</h2>
+
+<article>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <p id="price">{{ game.Price | currency }}</p>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <p id="description">{{ game.Description }}</p>
+    </div>
+    <br />
+    <footer class="uppercase">
+        <a href="#/GamesAdmin/Edit/{{game.GameID}}" class="btn btn-primary">Edit</a>
+        <a ng-click="delete(game)" class="btn btn-primary ">Delete</a>
+        <a href="#/" class="btn btn-default">Return</a>
+    </footer>
+</article>

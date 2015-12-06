@@ -1,0 +1,20 @@
+﻿<h2>{{title}}</h2>
+
+<form ng-submit="save()">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control" placeholder="Title" ng-model="game.Title" required />
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" class="form-control" placeholder="Price" ng-model="game.Price" required />
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" class="form-control" rows="3" ng-model="game.Description" required></textarea>
+    </div>
+    <footer class="uppercase">
+        <input type="submit" class="btn btn-primary" value="SAVE" />
+        <a href="#/" class="btn btn-default">Return</a>
+    </footer>
+</form>
